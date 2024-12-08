@@ -18,13 +18,13 @@ This is Brielle's solution to the [Bento grid challenge on Frontend Mentor](http
 
 ### Screenshot
 
-![mobile-design](assets/screenshots/mobile-view.png)
+![mobile-design](assets/screenshots/mobileView.png)
 ![desktop-design](assets/screenshots/desktopView.png)
 
 ### Links
 
--  Solution URL: [Add solution URL here](https://your-solution-url.com) - github
--  Live Site URL: [Add live site URL here](https://your-live-site-url.com) - vercel
+-  Solution URL: [solution URL ](https://github.com/Bri-elle/FEM-BentoGrid.git) - github
+-  Live Site URL: [ live site URL](https://fem-bento-grid-git-main-brielles-projects.vercel.app) - vercel
 
 ## My process
 
