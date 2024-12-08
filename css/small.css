@@ -1,0 +1,372 @@
+/*
+===========
+LAYOUT
+===========
+*/
+
+/* Mobile Devices */
+.container {
+	width: 100%;
+	padding: 2rem 1rem;
+	min-height: 100vh;
+	display: grid;
+
+	grid-template-areas:
+		"AI-speed"
+		"platforms"
+		"consistency"
+		"audience"
+		"content"
+		"growth"
+		"quicker"
+		"AI-write";
+
+	row-gap: 1.5rem;
+}
+
+.card {
+	width: 80%;
+	border-radius: 8px;
+}
+/* Quicker */
+.card.one {
+	text-align: left;
+	text-wrap: balance;
+}
+
+/* AI write */
+.card.two {
+	text-align: left;
+}
+
+/* AI-Faster */
+.card.three {
+	line-height: 1;
+	margin: 0 auto;
+	text-wrap: balance;
+}
+.card.three .content-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+/* Audience */
+.card.four {
+	text-wrap: pretty;
+}
+
+/* Platforms */
+.card.five {
+	text-align: left;
+}
+
+/* consistency */
+.card.six {
+	text-align: left;
+	text-wrap: balance;
+	overflow: hidden;
+}
+
+/* Growth */
+.card.seven {
+	text-align: left;
+}
+
+/* Content */
+.card.eight {
+	text-wrap: balance;
+}
+
+/* Tablets */
+@media only screen and (min-width: 600px) {
+	.container {
+		padding: 4rem 1rem;
+		row-gap: 2rem;
+	}
+
+	.card {
+		width: 70%;
+		border-radius: 16px;
+		padding: 1.5rem;
+	}
+	/* Quicker */
+	.card.one {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 1rem;
+	}
+
+	/* Consistency */
+	.card.six {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	/* Audience */
+	.card.four {
+		display: flex;
+		align-items: center;
+	}
+	.text-wrapper-audience {
+		align-content: center;
+	}
+
+	/* Content */
+	.card.eight {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	/* Growth */
+	.card.seven {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	/* Quicker */
+	.card.one {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	/* AI write */
+	.card.two {
+		display: flex;
+	}
+	.card.two p {
+		align-content: center;
+		text-wrap: balance;
+		justify-content: space-around;
+	}
+}
+/* Layout */
+.icon-wrapper {
+	/* border: 2px solid ; */
+	width: 9.375rem;
+	margin-top: 0.5rem;
+}
+
+.img-wrapper-consistency {
+	width: 150px;
+	height: 84px;
+	object-fit: fill;
+	margin-top: 1rem;
+}
+
+.img-wrapper-audience {
+	width: 235px;
+	/* border: #FECC66 2px solid; */
+	border-radius: 8px;
+	margin: 0 auto;
+}
+.img-wrapper-audience img {
+	border-radius: 8px;
+	margin: 1rem auto;
+	width: 95%;
+	height: 100%;
+}
+
+.text-wrapper-audience {
+	/* border: #FECC66 2px solid; */
+	width: 90%;
+	margin-inline: auto;
+	text-align: center;
+}
+
+.content-wrapper2 {
+	width: 150px;
+	max-width: 200px;
+	margin: 0 auto;
+}
+
+.img-wrapper-content {
+	width: 190px;
+	margin: 0 auto;
+	margin-bottom: 2rem;
+}
+
+.content-wrapper img {
+	width: 100%;
+	/* border: #FECC66 2px solid; */
+	border-radius: 16px;
+}
+
+.img-wrapper-growth,
+.img-wrapper-quicker {
+	width: 150px;
+	/* border: #FECC66 2px solid; */
+}
+.img-wrapper-growth {
+	margin-top: 1rem;
+}
+
+.img-wrapper-platform {
+	margin-bottom: 1rem;
+}
+.img-wrapper-AIwrite {
+	width: 180px;
+}
+
+.card {
+	/* border: 2px solid brown; */
+	margin: 0.5rem;
+	padding: 1rem;
+	text-align: center;
+	text-wrap: pretty;
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+		rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+		rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+	/* max-width: 270px;  */
+	margin: 0 auto;
+}
+@media only screen and (min-width: 771px) {
+	.card.three {
+		padding: 1rem;
+	}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	body {
+		height: 100vh;
+		display: block;
+		align-content: center;
+	}
+	.card {
+		line-height: 1.5rem;
+	}
+	.small-text {
+		font-size: 0.875rem; /* 16px */
+	}
+
+	.medium-text {
+		font-size: 1.5rem; /* 24px */
+		font-weight: 500;
+	}
+	.medium2-text {
+		font-size: 1.75rem; /* 28px */
+		font-weight: 500;
+		line-height: 1.8rem;
+	}
+
+	.large-text {
+		font-size: 2.8125rem; /* 45px */
+		font-weight: 500;
+	}
+
+	.container {
+		height: 100%;
+		width: fit-content;
+		margin: 0 auto;
+		place-content: center;
+
+		grid-template-areas:
+			"quicker AI-speed AI-speed audience "
+			"quicker platforms consistency audience"
+			"AI-write platforms consistency audience "
+			"AI-write  growth  content content";
+		grid-template-columns: repeat(4, 200px); /* 4 equal columns */
+		grid-template-rows: 232px 65px 114px 184px;
+		gap: 1.5rem;
+		padding: 0;
+	}
+
+	.card {
+		width: 100%;
+		height: 100%;
+		border-radius: 8px;
+	}
+
+	.card.three {
+		align-content: center;
+		margin-inline: auto;
+	}
+
+	.card.four {
+		flex-direction: column;
+		text-wrap: pretty;
+		overflow: hidden;
+	}
+
+	.text-wrapper-audience {
+		width: 90%;
+		margin-inline: auto;
+		text-align: center;
+	}
+
+	/* Quicker */
+	.card.one {
+		display: block;
+		align-content: center;
+	}
+
+	/* Consistency */
+	.card.six {
+		display: block;
+	}
+
+	/* Audience */
+	.card.four {
+		gap: 0.5rem;
+	}
+	.text-wrapper-audience {
+		margin-top: 2rem;
+		line-height: 1.15;
+		text-align: left;
+	}
+	/* Platforms */
+	.card.five {
+		overflow: hidden;
+	}
+	.card.five img {
+		max-width: 166%;
+	}
+	.img-wrapper-platform {
+		width: 150px;
+	}
+	/* Content */
+	.content-wrapper2 {
+		text-align: left;
+		width: 45%;
+	}
+
+	.img-wrapper-content {
+		width: 45%;
+		margin: 0;
+	}
+
+	.card.eight {
+	}
+	/* Growth */
+	.card.seven {
+		flex-direction: column;
+	}
+
+	/* Quicker */
+	.card.one {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	/* AI write */
+	.card.two {
+		flex-direction: column;
+		gap: 1rem;
+	}
+
+	.img-wrapper-AIwrite {
+	}
+	.card.two p {
+	}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}

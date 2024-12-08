@@ -1,0 +1,194 @@
+/*
+===========
+CSS Reset
+===========
+*/
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	line-height: 1.5;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+/*
+
+/*
+===========
+Variables
+===========
+
+—BG-COLOR:
+—TEXT-COLOR:
+—ACCENT-COLOR1:
+—ACCENT-COLOR2:
+
+—LARGE-FONT:
+—MEDIUM-FONT:
+—BODY-FONT:
+
+
+*/
+:root {
+	--clr-purple100: hsl(254, 88%, 90%);
+	--clr-purple500: hsl(256, 67%, 59%);
+
+	--clr-yellow100: hsl(31, 66%, 93%);
+	--clr-yellow500: hsl(39, 100%, 71%);
+
+	--clr-white: hsl(0, 0%, 100%);
+	--clr-black: hsl(0, 0%, 7%);
+}
+
+/*
+===========
+GENERIC STYLES
+===========
+*/
+
+html {
+	min-height: 100%;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	/* height:100%*/
+}
+/*
+===========
+TYPOGRAPHY
+===========
+*/
+body {
+	font-family: "DM Sans", sans-serif;
+	font-weight: 400;
+}
+
+/*
+===========
+LAYOUT
+===========
+*/
+
+.card.one {
+	grid-area: quicker;
+}
+
+.card.two {
+	grid-area: AI-write;
+}
+
+.card.three {
+	grid-area: AI-speed;
+	padding: 2rem 0;
+}
+
+.card.four {
+	grid-area: audience;
+}
+
+.card.five {
+	grid-area: platforms;
+	line-height: 1;
+}
+
+.card.six {
+	grid-area: consistency;
+	line-height: 1;
+}
+
+.card.seven {
+	grid-area: growth;
+}
+
+.card.eight {
+	grid-area: content;
+	line-height: 1;
+}
+
+/*
+
+===========
+BACKGROUND/IMAGES
+===========
+*/
+
+/*
+===========
+COLORS
+===========
+*/
+body {
+	background-color: var(--clr-white);
+}
+.gold-text {
+	color: #fecc66;
+}
+.purple-text {
+	color: var(--clr-purple500);
+}
+
+.white-text {
+	color: var(--clr-white);
+}
+
+.purple-bg1 {
+	background-color: var(--clr-purple500);
+}
+
+.purple-bg2 {
+	background-color: var(--clr-purple100);
+}
+
+.yellow-bg1 {
+	background-color: var(--clr-yellow500);
+}
+
+.yellow-bg2 {
+	background-color: var(--clr-yellow100);
+}
+
+/* UTILITY CLASSES */
+.small-text {
+	font-size: 0.875rem; /* 12px */
+}
+
+.medium-text {
+	font-size: 1.125rem; /* 18px */
+	font-weight: 500;
+}
+.medium2-text {
+	font-size: 1.125rem; /* 18px */
+	font-weight: 500;
+	line-height: 1.8rem;
+}
+
+.large-text {
+	font-size: 2.25rem; /* 50px */
+	font-weight: 500;
+}
+
+/*
+=============
+ACTIVE-STATES
+=============
+*/
+
+/*
+=====================================
+LARGE SCREENS 
+=====================================
+*/
